@@ -241,14 +241,16 @@ body {
 
 .accept-list li,
 .no-accept li {
-    list-style: disc; /* Чёрные точки */
+    list-style: disc;
+    list-style-type: #d32f2f;/* Чёрные точки */
     color: #333;      /* Цвет текста */
     margin: 0.5rem 0;
 }
 
-/* Цвет текста для "не принимаем" */
-.no-accept li {
-    color: #d32f2f; /* Красный текст */
+.no-accept li > p {
+    color: #d32f2f;
+    margin:0;
+    
 }
 
 /* Стили для 2GIS карты */
