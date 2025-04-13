@@ -50,7 +50,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    padding: 3rem 2rem;
+    padding: 2rem 5rem;
 }
 
 .stat-item {
@@ -142,6 +142,9 @@ body {
 
 .google-form {
     margin-top: 1rem;
+    width: 1000px;
+    margin-left: auto;  /* Автоматический отступ слева */
+    margin-right: 0;    /* Обнуление отступа справа */
 }
 
 /* Новые стили для шапки */
@@ -149,7 +152,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -176,7 +179,7 @@ body {
 /* Новые стили для героя */
 .hero {
     position: relative;
-    height: 70vh;
+    height: 75vh;
     background: url('../img/hero-bg.jpg') center/cover no-repeat;
 }
 
@@ -294,5 +297,131 @@ body {
     .gis-point h3,
     .gis-point p {
         padding: 1rem;
+    }
+}
+
+/* Блок контактов */
+.contacts-preview {
+    background: #f8f9fa;
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+}
+
+.contacts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.ip-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.social-block h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    padding: 0rem, 0rem;
+}
+.text-block h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.h3-center {
+    color: #333;
+    text-align: center;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+.social-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    border: 2px solid;
+    justify-content: center;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Цвета кнопок */
+.vk { background: #0077ff; color: white; border-color: #0077ff; }
+.tg { background: #2aabee; color: white; border-color: #2aabee; }
+
+.text-block {
+    background: rgba(255, 255, 255, 0);
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: end;
+}
+
+@media (max-width: 768px) {
+    .contacts-preview {
+        padding: 2rem 1rem;
+    }
+    
+    .social-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center; /* Выравнивание кнопок по правому краю */
+    }
+    
+    .social-btn {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1080px) {
+    .google-form {
+        width: 100%;
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    
+    .google-form iframe {
+        width: 100% !important;
+    }
+}
+
+/* Новые стили */
+.step {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.google-form {
+    flex: 1;
+    max-width: 1000px;
+    margin-top: 0;
+}
+
+@media (max-width: 1200px) {
+    .step {
+        flex-direction: column;
+    }
+    
+    .google-form iframe {
+        width: 100% !important;
+        height: 500px !important;
     }
 }
