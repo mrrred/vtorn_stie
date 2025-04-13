@@ -425,3 +425,33 @@ body {
         height: 500px !important;
     }
 }
+
+.step {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.right-image {
+    margin-left: auto; /* Выравнивание по правому краю */
+    max-width: 500px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .step {
+        flex-direction: column;
+    }
+    
+    .right-image {
+        margin-left: 0;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.p-center {
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
